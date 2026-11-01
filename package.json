@@ -1,0 +1,30 @@
+{
+  "name": "mak-bpo-react",
+  "version": "2.2.0",
+  "private": true,
+  "type": "module",
+  "description": "MAK BPO \u2014 complete React frontend with two EmailJS forms",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build && node scripts/postbuild.mjs",
+    "preview": "vite preview",
+    "check": "node scripts/check-react.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@emailjs/browser": "4.4.1",
+    "motion": "14.9.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.5",
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "6.1.2",
+    "vite": "8.3.5"
+  }
+}

@@ -1,0 +1,7 @@
+import {useState} from 'react';
+import {company} from '../config/site';
+import Icon from './Icon';
+export default function LocationMap(){
+  const [loaded,setLoaded]=useState(false),query=encodeURIComponent(company.mapQuery);
+  return <div className={`location-map ${loaded?'is-loaded':''}`} data-map-loaded={loaded}><div className="map-illustration" aria-hidden="true"><span className="map-road road-a"/><span className="map-road road-b"/><span className="map-road road-c"/><i className="map-ring"/><i className="map-ring ring-two"/><span className="map-point"><Icon name="pin" size={32}/></span></div>{loaded?<iframe title="Google Maps location search for MAK BPO, Satellite Town, Rawalpindi" src={`https://maps.google.com/maps?q=${query}&z=16&output=embed`} referrerPolicy="no-referrer-when-downgrade" allowFullScreen/>:<div className="map-preview-content"><span className="map-coordinate">SATELLITE TOWN · RAWALPINDI</span><h3>Your next connection<br/>starts here.</h3><p>B Block · Changezi Street<br/>Building 4 · First floor</p><button className="btn btn-primary" onClick={()=>setLoaded(true)}><Icon name="globe"/>Load interactive map</button></div>}<div className="map-caption"><span><i/>MAK BPO / PAKISTAN</span>{loaded&&<button aria-label="Back to location overview" title="Back to location overview" onClick={()=>setLoaded(false)}><Icon name="close"/></button>}<a href={`https://www.google.com/maps/search/?api=1&query=${query}`} target="_blank" rel="noopener noreferrer">Open Google Maps<Icon name="arrow-up"/></a></div></div>;
+}

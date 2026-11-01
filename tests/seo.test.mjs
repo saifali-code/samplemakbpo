@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {seoFor} from '../src/data/seo.mjs';
+import {pageCatalog} from '../src/data/routes.mjs';
+const origin='https://makbpotelecommunications.com';
+test('all pages have unique canonical URLs and useful descriptions',()=>{const pages=pageCatalog.map(p=>seoFor(p.path,origin));assert.equal(new Set(pages.map(p=>p.canonical)).size,42);for(const p of pages){assert.match(p.canonical,/^https:\/\/makbpotelecommunications\.com\//);assert.ok(p.description.length>60);assert.ok(p.title.endsWith(' | MAK BPO'));}});
+test('organization includes verified office and U.S. market without guessed coordinates or ratings',()=>{const o=seoFor('/',origin).graph['@graph'][0];assert.equal(o.address.addressLocality,'Rawalpindi');assert.equal(o.address.postalCode,'46300');assert.equal(o.areaServed.name,'United States');assert.equal(o.telephone,'+923364703667');assert.match(o.description,/6:00 PM.*5:00 AM/);for(const key of ['geo','aggregateRating','founder','sameAs','openingHours'])assert.equal(o[key],undefined);});
+test('sample team profiles are not indexed or emitted as real people',()=>{const s=seoFor('/team/',origin);assert.equal(s.robots,'noindex,follow');assert.ok(!JSON.stringify(s.graph).includes('Sample Team Member'));});
+test('four campaign pages have their own Service schema and breadcrumbs',()=>{for(const slug of ['final-expense','iul','auto-insurance','aca']){const s=seoFor(`/services/${slug}/`,origin),graph=s.graph['@graph'];assert.equal(graph.filter(x=>x['@type']==='Service').length,1);const b=graph.find(x=>x['@type']==='BreadcrumbList');assert.equal(b.itemListElement.length,3);assert.equal(b.itemListElement[2].item,s.canonical);}});
+test('FAQ schema reflects the visible verified working-hours answer',()=>{const f=seoFor('/faq/',origin).graph['@graph'].find(x=>x['@type']==='FAQPage');const hours=f.mainEntity.find(q=>q.name.includes('working hours'));assert.match(hours.acceptedAnswer.text,/6:00 PM.*5:00 AM.*PKT/);});
+test('unknown routes are noindex',()=>assert.equal(seoFor('/missing/',origin).robots,'noindex,follow'));
+test('appearance gallery stays out of search results',()=>assert.equal(seoFor('/themes/',origin).robots,'noindex,follow'));

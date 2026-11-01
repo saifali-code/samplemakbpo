@@ -1,0 +1,2 @@
+import {PageHero,Button} from '../components/UI';
+export default function NotFound(){return <><PageHero label="404 / A SMALL DETOUR" title={<>Let’s reconnect<br/>you with <em>MAK.</em></>} description="This address does not lead to a page. There’s plenty more to explore."/><section className="section light-section"><div className="container error-actions"><Button to="/">Back to the homepage</Button><Button to="/services/" variant="outline">Explore services</Button><Button to="/contact/" variant="outline">Contact MAK</Button></div></section></>;}

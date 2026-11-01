@@ -1,0 +1,13 @@
+import React from 'react';
+import {createRoot,hydrateRoot} from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom';
+import {MotionConfig} from 'motion/react';
+import {ExperienceProvider} from './context/ExperienceContext';
+import App from './App';
+import './styles/base.css';
+import './styles/react.css';
+import './styles/experience.css';
+import './styles/motion-upgrade.css';
+const app=<React.StrictMode><BrowserRouter><MotionConfig reducedMotion="user"><ExperienceProvider><App/></ExperienceProvider></MotionConfig></BrowserRouter></React.StrictMode>;
+const root=document.getElementById('root');
+if(root.hasChildNodes())hydrateRoot(root,app);else createRoot(root).render(app);

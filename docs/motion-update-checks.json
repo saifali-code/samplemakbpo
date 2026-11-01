@@ -1,0 +1,285 @@
+{
+  "version": "2.2",
+  "responsive": [
+    {
+      "width": 360,
+      "wanted": "dark",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 345,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 345,
+      "toggleVisible": true
+    },
+    {
+      "width": 360,
+      "wanted": "light",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 345,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 345,
+      "toggleVisible": true
+    },
+    {
+      "width": 390,
+      "wanted": "dark",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 375,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 375,
+      "toggleVisible": true
+    },
+    {
+      "width": 390,
+      "wanted": "light",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 375,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 375,
+      "toggleVisible": true
+    },
+    {
+      "width": 600,
+      "wanted": "dark",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 585,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 585,
+      "toggleVisible": true
+    },
+    {
+      "width": 600,
+      "wanted": "light",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 585,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 585,
+      "toggleVisible": true
+    },
+    {
+      "width": 768,
+      "wanted": "dark",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 753,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 753,
+      "toggleVisible": true
+    },
+    {
+      "width": 768,
+      "wanted": "light",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 753,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 753,
+      "toggleVisible": true
+    },
+    {
+      "width": 1024,
+      "wanted": "dark",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1009,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 1009,
+      "toggleVisible": true
+    },
+    {
+      "width": 1024,
+      "wanted": "light",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1009,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 1009,
+      "toggleVisible": true
+    },
+    {
+      "width": 1100,
+      "wanted": "dark",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1085,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 1085,
+      "toggleVisible": true
+    },
+    {
+      "width": 1100,
+      "wanted": "light",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1085,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 1085,
+      "toggleVisible": true
+    },
+    {
+      "width": 1440,
+      "wanted": "dark",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1425,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 1425,
+      "toggleVisible": true
+    },
+    {
+      "width": 1440,
+      "wanted": "light",
+      "animation": "architecture-drift",
+      "backgroundOnly": true,
+      "client": 1425,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 1425,
+      "toggleVisible": true
+    },
+    {
+      "width": 320,
+      "wanted": "dark",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 305,
+      "collision": false,
+      "mode": "dark",
+      "navCollision": false,
+      "scroll": 305,
+      "toggleVisible": true
+    },
+    {
+      "width": 320,
+      "wanted": "light",
+      "animation": "architecture-drift-mobile",
+      "backgroundOnly": true,
+      "client": 305,
+      "collision": false,
+      "mode": "light",
+      "navCollision": false,
+      "scroll": 305,
+      "toggleVisible": true
+    }
+  ],
+  "pages": [
+    {
+      "width": 320,
+      "path": "/contact/",
+      "building": 0,
+      "client": 305,
+      "forms": 1,
+      "scroll": 305,
+      "toggle": 1
+    },
+    {
+      "width": 320,
+      "path": "/careers/",
+      "building": 0,
+      "client": 305,
+      "forms": 1,
+      "scroll": 305,
+      "toggle": 1
+    },
+    {
+      "width": 320,
+      "path": "/team/",
+      "building": 0,
+      "client": 305,
+      "forms": 0,
+      "scroll": 305,
+      "toggle": 1
+    },
+    {
+      "width": 768,
+      "path": "/contact/",
+      "building": 0,
+      "client": 753,
+      "forms": 1,
+      "scroll": 753,
+      "toggle": 1
+    },
+    {
+      "width": 768,
+      "path": "/careers/",
+      "building": 0,
+      "client": 753,
+      "forms": 1,
+      "scroll": 753,
+      "toggle": 1
+    },
+    {
+      "width": 768,
+      "path": "/team/",
+      "building": 0,
+      "client": 753,
+      "forms": 0,
+      "scroll": 753,
+      "toggle": 1
+    },
+    {
+      "width": 1440,
+      "path": "/contact/",
+      "building": 0,
+      "client": 1425,
+      "forms": 1,
+      "scroll": 1425,
+      "toggle": 1
+    },
+    {
+      "width": 1440,
+      "path": "/careers/",
+      "building": 0,
+      "client": 1425,
+      "forms": 1,
+      "scroll": 1425,
+      "toggle": 1
+    },
+    {
+      "width": 1440,
+      "path": "/team/",
+      "building": 0,
+      "client": 1425,
+      "forms": 0,
+      "scroll": 1425,
+      "toggle": 1
+    }
+  ],
+  "togglePersistence": "passed",
+  "moving": true,
+  "pauseFreezesModel": true,
+  "pauseSurvivesThemeSwitch": true,
+  "tabletMenu": "passed"
+}

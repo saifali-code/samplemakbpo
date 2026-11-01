@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {prepareSubmission,isEmailConfigured,deliverSubmission,submissionTypes} from '../src/services/submission-core.mjs';
+const settings={publicKey:'public_example_key',serviceId:'service_example',templates:{contact:'template_contact',careers:'template_careers'}};
+const contact={from_name:' Test Person ',reply_to:'test@example.com',subject:'Partnership / collaboration',message:'Discuss an outsourcing project.',consent:true};
+const career={from_name:'Candidate',reply_to:'candidate@example.com',phone:'+923000000000',city:'Rawalpindi',position:'Junior Closer',experience:'New to the industry',consent:true};
+test('only contact and careers are supported',()=>assert.deepEqual(submissionTypes,['contact','careers']));
+test('contact includes partnership as an enquiry topic',()=>{const p=prepareSubmission('contact',contact,'https://example.com/contact/');assert.equal(p.subject,'Partnership / collaboration');assert.equal(p.from_name,'Test Person');assert.equal(p.form_type,'contact');});
+test('careers includes the selected role and no upload',()=>{const p=prepareSubmission('careers',career);assert.equal(p.position,'Junior Closer');assert.ok(!('file' in p));});
+test('empty EmailJS configuration cannot report success',async()=>{let calls=0;await assert.rejects(deliverSubmission({type:'contact',values:contact,settings:{},sender:()=>calls++}),/has not been sent/);assert.equal(calls,0);});
+test('correct contact template and public key are passed to EmailJS',async()=>{let args;await deliverSubmission({type:'contact',values:contact,settings,sender:async(...x)=>{args=x;return {status:200};}});assert.equal(args[1],'template_contact');assert.equal(args[3].publicKey,'public_example_key');});
+test('correct careers template is used',async()=>{let args;await deliverSubmission({type:'careers',values:career,settings,sender:async(...x)=>{args=x;}});assert.equal(args[1],'template_careers');});
+test('delivery failure propagates instead of returning success',async()=>{await assert.rejects(deliverSubmission({type:'contact',values:contact,settings,sender:async()=>{throw new Error('Network unavailable');}}),/Network unavailable/);});
+test('consent and required fields are checked',()=>{assert.throws(()=>prepareSubmission('contact',{...contact,consent:false}),/Privacy/);assert.throws(()=>prepareSubmission('careers',{...career,position:'Unknown'}),/required/);assert.throws(()=>prepareSubmission('contact',{...contact,reply_to:'invalid'}),/valid email/);});
+test('placeholder keys are rejected',()=>assert.equal(isEmailConfigured({...settings,publicKey:'YOUR_PUBLIC_KEY'},'contact'),false));

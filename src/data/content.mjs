@@ -1,0 +1,177 @@
+export const company = {
+  name: 'MAK BPO And Telecommunications',
+  shortName: 'MAK BPO',
+  email: 'info@makbpotelecommunications.com',
+  phone: '+92 3364703667',
+  phoneLink: '+923364703667',
+  whatsapp: 'https://wa.me/923364703667',
+  hours: '6:00 PM – 5:00 AM',
+  hoursDetail: '6:00 PM to 5:00 AM the following morning, Pakistan Standard Time (PKT, UTC+05:00)',
+  timezone: 'Asia/Karachi',
+  market: 'United States',
+  tagline: 'Pakistan talent. U.S. campaigns. Insurance expertise.',
+  address: '1st floor, BLDG 4, st 1 changezi st B Block satellite town Rawalpindi, Rawalpindi, Pakistan 46300',
+  mapQuery: 'MAK BPO And Telecommunications, BLDG 4, Street 1 Changezi Street, B Block Satellite Town, Rawalpindi, Pakistan 46300'
+};
+
+// Service copy is original. Scope, coverage, pricing and capacity are agreed per engagement.
+export const services = [
+  {
+    slug:'final-expense',title:'Final Expense',subtitle:'Life insurance campaign support',category:'Insurance campaigns',icon:'heart',
+    label:'Care in every conversation.',
+    intro:'Final Expense campaigns need a clear message and a considerate human voice. MAK supports approved outreach, qualification, validation, and organised handovers for final expense life-insurance programmes.',
+    description:'People-focused outreach, qualification, and validation for Final Expense campaigns.',
+    deliverables:['Approved inbound and outbound conversations','Interest and campaign-criteria qualification','Live-transfer and appointment coordination','Call and information validation','Follow-up notes and CRM handovers'],
+    outcomes:['A consistent, respectful conversation from the first hello','Clear information for the next person in the process','Connected closer, validator, and campaign-owner handovers'],
+    process:['Agree the audience, approved script, contact permissions, and campaign goals.','Train the team on qualification questions and escalation boundaries.','Connect interested prospects with the appropriate authorised professional.','Review records, handover quality, and campaign feedback together.'],
+    scope:'MAK is presenting its call-centre support workflow. Insurance recommendations, policy terms, coverage decisions, and licensed sales activities belong with appropriately authorised professionals.',
+    questions:[['What does MAK do for Final Expense campaigns?','We support the conversation and process: approved outreach, initial qualification, validation, follow-ups, and agreed handovers. The exact work is defined with the campaign partner.'],['Can I get a policy quote on this website?','This is MAK’s BPO company website. It does not generate policy quotations or make coverage decisions. Contact the team to discuss the relevant business workflow.']]
+  },
+  {
+    slug:'iul',title:'IUL',subtitle:'Indexed Universal Life campaign support',category:'Insurance campaigns',icon:'growth',
+    label:'Complex journeys. Clearer connections.',
+    intro:'IUL stands for Indexed Universal Life. Our campaign support keeps the early conversation, appointment coordination, and information handover clear, so product-specific discussions can continue with the appropriate licensed professional.',
+    description:'Structured prospect conversations and appointment handovers for Indexed Universal Life campaigns.',
+    deliverables:['Approved first-contact and interest conversations','Prospect qualification against the partner’s brief','Appointment setting and follow-up coordination','Complete, organised notes for licensed professionals','Call validation against an agreed checklist'],
+    outcomes:['A useful context before the product conversation begins','An agreed next step for each interested prospect','Clear responsibilities between outreach and licensed advice'],
+    process:['Define the target audience and approved campaign language.','Agree qualification criteria, exclusions, and information boundaries.','Coordinate relevant appointments and documented handovers.','Review feedback from the receiving team and refine the workflow.'],
+    scope:'Policy illustrations, cash values, crediting methods, costs, and suitability questions require a licensed professional and the actual policy documents. MAK does not promise investment returns or policy outcomes.',
+    questions:[['What is IUL?','IUL is short for Indexed Universal Life, a type of life insurance. This page describes BPO campaign support; product-specific advice should come from a licensed professional.'],['What can an IUL partnership include?','The scope may include approved prospect outreach, qualification, appointment setting, follow-up administration, and validation. We agree the campaign details before launch.']]
+  },
+  {
+    slug:'auto-insurance',title:'Auto Insurance',subtitle:'Vehicle insurance campaign support',category:'Insurance campaigns',icon:'car',
+    label:'Keep the next conversation moving.',
+    intro:'Support the route from vehicle-insurance interest to a useful conversation with the right team. MAK brings approved enquiry handling, initial qualification, appointment coordination, and record validation into one connected process.',
+    description:'Organised enquiries, prospect qualification, and handovers for Auto Insurance campaigns.',
+    deliverables:['Approved inbound enquiry and outbound workflows','Interest, territory, and campaign-criteria checks','Transfer and appointment coordination','Follow-up administration and outcome tracking','Information validation and escalation notes'],
+    outcomes:['More context for the receiving insurance team','Consistent qualification and handover records','A defined route for questions that need specialist attention'],
+    process:['Confirm markets, approved questions, contact permissions, and exclusions.','Map the enquiry and qualification flow to the partner’s requirements.','Coordinate transfers, appointments, and agreed follow-ups.','Review call quality, exceptions, and handover feedback.'],
+    scope:'Insurance quotations, premiums, coverage explanations, underwriting, and policy changes remain with authorised insurance professionals. Availability and final scope are agreed with the campaign partner.',
+    questions:[['Does MAK issue Auto Insurance policies?','This website presents MAK’s call-centre campaign services. Policy advice, quotations, and issuance remain with the relevant authorised insurance provider.'],['How are enquiries handed over?','We agree the qualification questions, required notes, transfer or appointment process, and escalation contacts with the campaign partner before work begins.']]
+  },
+  {
+    slug:'aca',title:'ACA',subtitle:'Affordable Care Act campaign support',category:'Insurance campaigns',icon:'medical',
+    label:'A thoughtful route to the right support.',
+    intro:'ACA refers to the Affordable Care Act. MAK supports health-insurance campaign conversations through approved enquiry handling, initial qualification, appointment coordination, and careful information handovers.',
+    description:'Approved health-campaign enquiries, qualification, and appointment coordination for ACA programmes.',
+    deliverables:['General campaign enquiry handling','Client-approved qualification questions','Appointment and licensed-agent handovers','Follow-up coordination and record updates','Validation against campaign-specific requirements'],
+    outcomes:['Clear next steps for people expressing interest','Consistent records for the appropriate receiving team','An agreed process for questions outside the campaign brief'],
+    process:['Agree the target market, campaign permissions, and approved materials.','Define the questions, required records, and escalation boundaries.','Coordinate appropriate appointments and documented handovers.','Review quality, accuracy, and partner feedback throughout the workflow.'],
+    scope:'Eligibility, subsidies, benefits, enrollment decisions, and insurance advice must be handled by appropriately authorised professionals. This website is a BPO company website and is not a government enrollment portal.',
+    questions:[['What does ACA stand for?','ACA stands for Affordable Care Act. Our service concerns the call-centre support workflow around an approved health-insurance campaign.'],['Can the website decide my eligibility?','No. Eligibility, financial assistance, benefits, and enrollment questions need the appropriate authorised professional or official Marketplace channel. MAK’s site explains business support services.']]
+  },
+  {
+    slug: 'customer-support', title: 'Customer support', label: 'Make every interaction count.', category: 'Experience', icon: 'headset',
+    intro: 'Give your customers a clear answer, a human connection, and a reason to come back. Build a support workflow around the way your business actually works.',
+    description: 'Thoughtful conversations across phone, email, and chat, shaped around your customers.',
+    deliverables: ['Inbound enquiry handling', 'Email and chat workflows', 'Order and account enquiries', 'Follow-up and escalation management'],
+    outcomes: ['A clear path from first contact to resolution', 'A consistent tone that reflects your brand', 'Defined handovers for cases that need your team'],
+    process: ['Map your common enquiries and escalation paths.', 'Create a practical knowledge base and response guide.', 'Train the team against real conversation scenarios.', 'Review feedback and refine the customer journey.'],
+    scope: 'Channels, coverage hours, response targets, and any system access are confirmed before launch.'
+  },
+  {
+    slug: 'outbound-telesales', title: 'Outbound & telesales', label: 'Better conversations. Clearer next steps.', category: 'Growth', icon: 'phone',
+    intro: 'Turn an approved campaign brief into a structured conversation. From the opening line to the final handover, keep your outreach relevant, accurate, and respectful.',
+    description: 'Purposeful outreach and sales conversations with a clear, agreed campaign brief.',
+    deliverables: ['Campaign script development', 'Outbound calling and follow-ups', 'Objection-handling guidance', 'Closer and client handovers'],
+    outcomes: ['A consistent message across the campaign', 'Clear contact outcomes and follow-up ownership', 'Feedback that helps improve the next conversation'],
+    process: ['Agree the audience, offer, and contact permissions.', 'Define scripts, exclusions, and escalation rules.', 'Coach agents on clarity and appropriate handovers.', 'Review call outcomes with your campaign owner.'],
+    scope: 'Contact sourcing, permitted calling hours, consent, and campaign-specific requirements must be agreed for each market.'
+  },
+  {
+    slug: 'lead-generation', title: 'Lead generation', label: 'Start with relevance.', category: 'Growth', icon: 'target',
+    intro: 'Create a thoughtful route from initial interest to a useful business conversation. Define what a qualified lead means for your team before outreach begins.',
+    description: 'Prospect research, qualification, and organised handovers for your sales team.',
+    deliverables: ['Ideal customer profile mapping', 'Prospect qualification questions', 'Appointment setting', 'Lead handover and follow-up notes'],
+    outcomes: ['Qualification criteria everyone can understand', 'Useful context for the next person in the journey', 'An agreed method for accepting and reviewing leads'],
+    process: ['Document your target audience and exclusions.', 'Agree the minimum qualification and consent fields.', 'Build a handover format that suits your sales process.', 'Review lead feedback and adjust the qualification flow.'],
+    scope: 'Lead sources, consent evidence, quality definitions, and acceptance rules are agreed in writing. No conversion outcome is guaranteed.'
+  },
+  {
+    slug: 'back-office', title: 'Back-office operations', label: 'Keep the details moving.', category: 'Operations', icon: 'layers',
+    intro: 'Give the essential work behind your customer experience a clear process. Organise records, track tasks, and make handovers easier to follow.',
+    description: 'Organised workflows for data, records, documentation, and everyday business tasks.',
+    deliverables: ['Data entry and record updates', 'CRM administration support', 'Document organisation', 'Task tracking and reconciliation support'],
+    outcomes: ['Documented steps for recurring tasks', 'Clear ownership and exception handling', 'A practical record of work completed'],
+    process: ['Identify repeatable tasks and their dependencies.', 'Define data fields, access levels, and review points.', 'Create a shared checklist and exception queue.', 'Review accuracy and update the operating procedure.'],
+    scope: 'Data sensitivity, access permissions, quality checks, and retention expectations are defined before information is shared.'
+  },
+  {
+    slug: 'quality-assurance', title: 'Quality & validation', label: 'Confidence in every handover.', category: 'Operations', icon: 'shield',
+    intro: 'Make quality a visible part of the process. Review conversations and campaign records against the criteria you agree, with specific feedback that helps the team improve.',
+    description: 'Call reviews, record checks, and constructive feedback built into the workflow.',
+    deliverables: ['Campaign-specific review scorecards', 'Call and record validation', 'Exception and escalation tracking', 'Coaching notes and review summaries'],
+    outcomes: ['A shared definition of an acceptable handover', 'Specific, actionable coaching feedback', 'Visibility into recurring process issues'],
+    process: ['Agree mandatory disclosures and quality criteria.', 'Set a review sample and escalation threshold.', 'Validate records against the approved scorecard.', 'Calibrate decisions with your campaign owner.'],
+    scope: 'Quality review supports your process; it does not replace legal advice, licensing, or a client’s regulatory responsibilities.'
+  },
+  {
+    slug: 'business-development', title: 'Business development', label: 'Find your next opportunity.', category: 'Growth', icon: 'arrow-up',
+    intro: 'Build a more organised route to new business. Bring prospect research, first conversations, appointment setting, and opportunity follow-ups into one connected workflow.',
+    description: 'Research, appointment setting, and structured follow-ups for a stronger pipeline.',
+    deliverables: ['Target account research', 'First-contact qualification', 'Meeting coordination', 'Pipeline and follow-up administration'],
+    outcomes: ['A focused list of relevant opportunities', 'Clear notes and ownership for each follow-up', 'More context before the first client meeting'],
+    process: ['Align on your market, proposition, and target accounts.', 'Research and prioritise suitable opportunities.', 'Run approved outreach and schedule next steps.', 'Review pipeline progress and improve messaging.'],
+    scope: 'Markets, outreach channels, decision-maker profiles, and reporting cadence are tailored during scoping.'
+  },
+  {
+    slug: 'technical-support', title: 'Technical support', label: 'Make the next step simple.', category: 'Experience', icon: 'terminal',
+    intro: 'Help people work through everyday product questions with calm, clear guidance. Use your approved knowledge base to diagnose common issues and direct complex cases to the right specialist.',
+    description: 'First-line product guidance, troubleshooting triage, and clear escalation paths.',
+    deliverables: ['First-line issue triage', 'Knowledge-base guided support', 'Ticket categorisation', 'Specialist escalation handovers'],
+    outcomes: ['More useful context in each support ticket', 'Consistent steps for common product questions', 'A defined route for unresolved issues'],
+    process: ['Map supported products and common issues.', 'Document troubleshooting and access boundaries.', 'Train against approved product scenarios.', 'Review escalations with your technical team.'],
+    scope: 'Supported products, tools, permissions, and escalation service levels are confirmed for each project.'
+  },
+  {
+    slug: 'dedicated-teams', title: 'Dedicated BPO teams', label: 'Your process. A connected team.', category: 'Operations', icon: 'people',
+    intro: 'Bring several workflows together with a dedicated point of coordination. Shape an outsourcing engagement around the roles, handovers, and operating rhythm your business needs.',
+    description: 'A scoped team model that brings people, processes, and reporting together.',
+    deliverables: ['Role and workflow planning', 'Campaign onboarding', 'Team communication routines', 'Reporting and review coordination'],
+    outcomes: ['A clear operating brief before launch', 'An agreed communication and review rhythm', 'A practical plan for adjusting the scope'],
+    process: ['Discuss the work, volumes, and required coverage.', 'Define responsibilities and onboarding materials.', 'Agree the launch plan and quality checkpoints.', 'Review performance and plan any scope changes.'],
+    scope: 'Team capacity, shift coverage, start dates, and commercials depend on the engagement and are confirmed by MAK.'
+  }
+];
+
+export const campaigns = [
+  {slug:'insurance',title:'Insurance & final expense',icon:'shield',tag:'Insurance',description:'Support the journey from initial interest to an informed conversation with the appropriate licensed professional.',tasks:['Approved prospect qualification','Consent-aware live transfer workflows','Appointment and follow-up coordination','Campaign record validation'],note:'Insurance advice, product recommendations, and licensed sales activities remain with appropriately authorised professionals.'},
+  {slug:'healthcare',title:'Healthcare programmes',icon:'heart',tag:'Healthcare',description:'Organise enquiries and appointment-related conversations around the programme’s approved process.',tasks:['General programme enquiry triage','Appointment coordination','Approved eligibility question routing','Accurate handover notes'],note:'Medicare and ACA-related programmes require separate client approval, market-specific procedures, and appropriate authorisation. No medical or coverage advice is provided by this website.'},
+  {slug:'home-services',title:'Home improvement',icon:'home',tag:'Home services',description:'Connect homeowner enquiries with the right service conversation and a clear next step.',tasks:['Service-interest qualification','Appointment scheduling','Location and project-scope checks','Follow-up coordination'],note:'Service areas, partner availability, and any property-related qualification rules are agreed for the specific campaign.'},
+  {slug:'energy',title:'Energy & HVAC',icon:'bolt',tag:'Energy',description:'Bring structure to energy-service enquiries, maintenance interest, and appointment handovers.',tasks:['Approved outreach and enquiry handling','Service and location qualification','Appointment coordination','Campaign outcome tracking'],note:'Technical assessments, installation advice, and quotations remain with the service provider.'},
+  {slug:'consumer-support',title:'Consumer & retail',icon:'bag',tag:'Customer experience',description:'Support useful, everyday conversations across the purchase and after-sales journey.',tasks:['Order and product enquiries','Customer follow-ups','Feedback collection','Issue escalation'],note:'Brand policies, customer data access, refund authority, and response coverage are confirmed before launch.'},
+  {slug:'b2b',title:'B2B growth programmes',icon:'globe',tag:'Business growth',description:'Give business-to-business prospecting a consistent research, outreach, and handover process.',tasks:['Target account research','Business contact qualification','Meeting scheduling','Pipeline follow-ups'],note:'Campaign targeting, contact permissions, territories, and lead acceptance standards are agreed with the client.'}
+];
+
+export const jobs = [
+  {slug:'junior-closer',title:'Junior Closer',level:'Develop your sales craft',summary:'Bring curiosity, clear English communication, and a willingness to learn the closer workflow.',tasks:['Support approved sales conversations and follow-ups.','Learn qualification and objection-handling techniques.','Maintain clear campaign notes and handovers.','Use coaching feedback to improve your conversations.'],skills:['Clear spoken English and active listening','Confidence speaking with new people','A coachable, consistent approach','Basic computer and record-keeping skills']},
+  {slug:'closer',title:'Closer',level:'Own the conversation',summary:'Guide qualified conversations with confidence, care, and a strong understanding of the campaign brief.',tasks:['Lead qualified conversations using approved scripts.','Explain the agreed next steps clearly and accurately.','Handle objections respectfully and escalate when needed.','Work closely with validators and campaign coordinators.'],skills:['Strong English communication and listening','Relevant calling or closing experience','Careful documentation and follow-through','Sound judgement within the campaign’s boundaries']},
+  {slug:'validators',title:'Validators',level:'Make quality your signature',summary:'Help the team deliver complete, accurate handovers through careful review and constructive feedback.',tasks:['Review call and record details against the campaign checklist.','Check required information and flag inconsistencies.','Escalate exceptions to the appropriate owner.','Share clear feedback that supports continuous improvement.'],skills:['Excellent attention to detail','Clear written and spoken communication','Confidence working with checklists and records','A fair, methodical approach to reviewing work']}
+];
+
+export const faqs = [
+  {group:'Working together',q:'Where is MAK based, and which market does it support?',a:'MAK BPO And Telecommunications is based in Satellite Town, Rawalpindi, Pakistan. We specialise in U.S. insurance campaign support: Final Expense, IUL, Auto Insurance, and ACA.'},
+  {group:'Website',q:'Are the team profiles and social links real?',a:'The current team page is clearly labelled as sample profiles, and the social profile URLs are demonstration links. MAK can replace them with its verified team information and official profiles. Call, WhatsApp, email, and the office address use the supplied company details.'},
+  {group:'Services',q:'Which insurance campaign services does MAK offer?',a:'Our named campaign services are Final Expense, IUL (Indexed Universal Life), Auto Insurance, and ACA (Affordable Care Act). Explore the Services page for the outreach, qualification, validation, appointment, and handover workflows for each campaign.'},
+  {group:'Website',q:'Can the chatbot help with jobs and services?',a:'Yes. MAK Guide provides immediate, automated answers about open roles, applications without a CV, our Rawalpindi location, partnerships, and the four insurance campaign services. It also includes call and WhatsApp handoffs for questions that need the team.'},
+  {group:'Website',q:'Is the chatbot a live human agent?',a:'MAK Guide is an automated company FAQ guide. It answers in your browser and does not connect you to a live agent in the chat window. Use its call or WhatsApp buttons to contact the MAK team directly.'},
+
+  {group:'Working together',q:'How do we start a project with MAK?',a:'Send a message through our Contact page. Tell us about your business, the work you need help with, your target market, and your preferred timeline. We will discuss scope, coverage, responsibilities, and the next steps with you.'},
+  {group:'Working together',q:'Can we combine more than one service?',a:'Yes. A project can be scoped around connected work such as enquiry handling, qualification, validation, and back-office tasks. The final mix, team availability, and reporting are agreed before launch.'},
+  {group:'Working together',q:'Do you publish standard pricing?',a:'Pricing depends on the workflow, coverage, expected volume, campaign requirements, and agreed responsibilities. Contact us with a short brief so we can discuss a suitable scope.'},
+  {group:'Working together',q:'Which campaigns are currently available?',a:'Our named insurance campaign services are Final Expense, IUL, Auto Insurance, and ACA. Other campaign pages show additional workflow examples. Contact MAK to confirm current staffing, partner requirements, and the final scope of your project.'},
+  {group:'Services',q:'How are quality expectations agreed?',a:'A project should start with clear qualification criteria, mandatory checks, handover requirements, and escalation rules. The review process and reporting cadence are then aligned with the campaign owner.'},
+  {group:'Services',q:'What are MAK’s working hours?',a:'MAK supports U.S. campaigns from Pakistan. Our working hours are 6:00 PM to 5:00 AM the following morning, Pakistan Standard Time (PKT, UTC+05:00). We do not run a Pakistan daytime shift. Confirm working days, interview times, and visits directly with the team.'},
+  {group:'Services',q:'Do you provide insurance or medical advice?',a:'The website describes business support workflows. Licensed insurance activities, product recommendations, medical advice, and specialist decisions must remain with appropriately authorised professionals.'},
+  {group:'Careers',q:'Which roles are open?',a:'The current openings provided by MAK are Junior Closer, Closer, and Validators. Read the role descriptions and choose the relevant position in the careers application form.'},
+  {group:'Careers',q:'Do I need to upload a CV?',a:'No. The application form asks for your contact details, the position you want, your experience level, and a short introduction. There is no CV upload.'},
+  {group:'Careers',q:'Where is the office?',a:'Our office is on the 1st floor, BLDG 4, st 1 changezi st, B Block Satellite Town, Rawalpindi, Pakistan 46300. Use the Contact page for the location search and directions. Please confirm your visit with us in advance.'},
+  {group:'Careers',q:'Where can I ask about shifts and compensation?',a:'Mention your questions in the application or contact us directly. The Pakistan night shift is 6:00 PM–5:00 AM PKT, ending the following morning. Compensation, working days, and the selection process are discussed by the MAK team; no unconfirmed salary figures are advertised here.'},
+  {group:'Website',q:'How can I contact MAK directly?',a:'Email info@makbpotelecommunications.com, call +92 3364703667, or use the WhatsApp link. The same details appear on the Contact page.'}
+];
+
+export const articles = [
+  {slug:'better-campaign-brief',category:'Operations',title:'A better campaign starts with a better brief.',excerpt:'Six practical decisions to align before the first conversation begins.',read:'5 min read',sections:[['Start with the outcome','A clear brief explains what the conversation should achieve. Is the goal to answer an enquiry, arrange an appointment, qualify interest, or hand over to a specialist? One defined outcome makes training and review more useful.'],['Define the audience and permissions','Document who the campaign is for, who should be excluded, and which contact permissions and calling rules apply. Agree how consent or source information will be recorded and checked.'],['Make qualification practical','Use questions that establish the facts your next team needs. Keep the criteria specific enough for consistent decisions and short enough for a natural conversation.'],['Plan the handover','Agree required notes, ownership, escalation contacts, and the format of the handover. A qualified opportunity is more useful when the next person understands the context.'],['Give quality a shared definition','Build a review checklist around the approved script, mandatory disclosures, accurate records, and respectful customer treatment. Calibrate decisions with the campaign owner.'],['Review and adjust','Choose a reporting rhythm and a route for feedback. Small changes to a question, a knowledge-base entry, or a handover step can improve the experience for everyone involved.']]},
+  {slug:'first-call-center-role',category:'Careers',title:'Preparing for your first call centre role.',excerpt:'How to practise listening, explain your experience, and arrive ready to learn.',read:'4 min read',sections:[['Practise clear communication','Read a short paragraph aloud and explain it again in your own words. Aim for a steady pace and clear pronunciation. Confidence grows when you know you can make the next step understandable.'],['Listen before responding','Try summarising what another person has said before giving an answer. Active listening helps you identify the real question and avoid responding to an assumption.'],['Bring examples of learning','You do not need to invent experience. Talk about a time you learned a process, handled a difficult conversation, or improved after feedback. Specific examples are easier to discuss than general claims.'],['Understand the role','A Junior Closer develops sales conversation skills, a Closer leads qualified conversations, and a Validator checks information against the campaign requirements. Choose the role that suits your strengths.'],['Ask practical questions','Ask about training, performance expectations, shift arrangements, and the next stage of the selection process. Apply through the MAK careers form without uploading a CV.']]},
+  {slug:'quality-in-every-handover',category:'Quality',title:'The small details behind a strong handover.',excerpt:'Why context, accuracy, and ownership matter as much as the conversation itself.',read:'4 min read',sections:[['Capture the useful facts','A handover should explain the customer’s stated need, the information already confirmed, and the next step they expect. Avoid adding assumptions that were not discussed.'],['Separate facts from open questions','Record what has been verified and what still needs attention. The next person can then focus on resolving the open questions instead of repeating the entire conversation.'],['Make ownership visible','A clear owner and an agreed follow-up route reduce uncertainty. Define where an exception goes and how a campaign coordinator can track it.'],['Use review as coaching','When a record is incomplete, give feedback that identifies the missing detail and explains why it matters. A useful review improves the next handover.'],['Keep the process proportionate','Collect only information that is needed for the agreed task. Follow the client’s approved handling, access, and retention instructions for campaign data.']]}
+];

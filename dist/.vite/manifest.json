@@ -1,0 +1,156 @@
+{
+  "_AnimatePresence-BcJ3aVqC.js": {
+    "file": "assets/AnimatePresence-BcJ3aVqC.js",
+    "name": "AnimatePresence",
+    "imports": [
+      "index.html"
+    ]
+  },
+  "_EmailForm-CjeDq6yW.js": {
+    "file": "assets/EmailForm-CjeDq6yW.js",
+    "name": "EmailForm",
+    "imports": [
+      "index.html",
+      "_content-2rHjweOm.js"
+    ],
+    "dynamicImports": [
+      "node_modules/@emailjs/browser/es/index.js"
+    ]
+  },
+  "_WorkingHours-Bs_cV5Ek.js": {
+    "file": "assets/WorkingHours-Bs_cV5Ek.js",
+    "name": "WorkingHours",
+    "imports": [
+      "_content-2rHjweOm.js",
+      "index.html"
+    ]
+  },
+  "_content-2rHjweOm.js": {
+    "file": "assets/content-2rHjweOm.js",
+    "name": "content"
+  },
+  "index.html": {
+    "file": "assets/index-DRSuJrPK.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_content-2rHjweOm.js"
+    ],
+    "dynamicImports": [
+      "src/components/Chatbot.jsx",
+      "src/graphics/createBuildingScene.js",
+      "src/pages/Services.jsx",
+      "src/pages/Careers.jsx",
+      "src/pages/Contact.jsx",
+      "src/pages/Team.jsx",
+      "src/pages/Company.jsx",
+      "src/pages/Resources.jsx",
+      "src/pages/NotFound.jsx"
+    ],
+    "css": [
+      "assets/index-Ca8xn5Re.css"
+    ]
+  },
+  "node_modules/@emailjs/browser/es/index.js": {
+    "file": "assets/es-CEr-k7AH.js",
+    "name": "es",
+    "src": "node_modules/@emailjs/browser/es/index.js",
+    "isDynamicEntry": true
+  },
+  "src/components/Chatbot.jsx": {
+    "file": "assets/Chatbot-BDdI2b3B.js",
+    "name": "Chatbot",
+    "src": "src/components/Chatbot.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AnimatePresence-BcJ3aVqC.js",
+      "index.html",
+      "_content-2rHjweOm.js"
+    ]
+  },
+  "src/graphics/createBuildingScene.js": {
+    "file": "assets/createBuildingScene-C1QSoa0W.js",
+    "name": "createBuildingScene",
+    "src": "src/graphics/createBuildingScene.js",
+    "isDynamicEntry": true
+  },
+  "src/pages/Careers.jsx": {
+    "file": "assets/Careers-BfZJcuyz.js",
+    "name": "Careers",
+    "src": "src/pages/Careers.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_content-2rHjweOm.js",
+      "_EmailForm-CjeDq6yW.js",
+      "_WorkingHours-Bs_cV5Ek.js",
+      "src/pages/NotFound.jsx"
+    ]
+  },
+  "src/pages/Company.jsx": {
+    "file": "assets/Company-BPlRWGzq.js",
+    "name": "Company",
+    "src": "src/pages/Company.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_WorkingHours-Bs_cV5Ek.js",
+      "index.html",
+      "_content-2rHjweOm.js"
+    ]
+  },
+  "src/pages/Contact.jsx": {
+    "file": "assets/Contact-CtS1g2VI.js",
+    "name": "Contact",
+    "src": "src/pages/Contact.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_content-2rHjweOm.js",
+      "_EmailForm-CjeDq6yW.js",
+      "_WorkingHours-Bs_cV5Ek.js"
+    ]
+  },
+  "src/pages/NotFound.jsx": {
+    "file": "assets/NotFound-QJEEca-0.js",
+    "name": "NotFound",
+    "src": "src/pages/NotFound.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "src/pages/Resources.jsx": {
+    "file": "assets/Resources-jyZE7ee3.js",
+    "name": "Resources",
+    "src": "src/pages/Resources.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_content-2rHjweOm.js",
+      "src/pages/NotFound.jsx",
+      "index.html"
+    ]
+  },
+  "src/pages/Services.jsx": {
+    "file": "assets/Services-dFNAKB8T.js",
+    "name": "Services",
+    "src": "src/pages/Services.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AnimatePresence-BcJ3aVqC.js",
+      "index.html",
+      "_content-2rHjweOm.js",
+      "src/pages/NotFound.jsx"
+    ]
+  },
+  "src/pages/Team.jsx": {
+    "file": "assets/Team-nrAlNeSm.js",
+    "name": "Team",
+    "src": "src/pages/Team.jsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html",
+      "_WorkingHours-Bs_cV5Ek.js"
+    ]
+  }
+}
